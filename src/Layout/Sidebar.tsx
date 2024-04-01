@@ -24,6 +24,12 @@ const Sidebar: React.FC = () => {
 
     const sideBar: Sidebar[] = [
         {
+            title: "Minimize",
+            icon: faCompress,
+            active: pathname === '/minimize',
+            link: "/minimize"
+        },
+        {
             title: "Dashboard",
             icon: faChartColumn,
             active: pathname === '/dashboard',
@@ -72,20 +78,19 @@ const Sidebar: React.FC = () => {
             link: "/practices"
         }
     ]
-    
+
     return (
         <div className="sidebar">
-            <div className="text-center p-2" style={{ backgroundColor: "#E7E7E7" }}>
-                <FontAwesomeIcon icon={faCompress} style={{ color: "#000000" }} />
-                <p>Minimize</p>
-            </div>
-            <div className="menu d-flex justify-content-evenly align-items-center vh-100 flex-column " style={{ overflowX: 'hidden' }}>
-                {sideBar.map((item, index) => (
-                    <Link to={item.link} key={index} className="p-2 text-center text-white" style={{ textDecoration: 'none' }}>  
-                             <FontAwesomeIcon icon={item.icon} style={{ color: "#ffffff" }} />
-                        <p>{item.title}</p>
-                    </Link>
-                ))}
+
+            <div className="menu d-flex justify-content-between align-items-center h-100 flex-column" style={{ textDecoration: 'none' }}>
+                {
+                    sideBar.map((item, index) =>
+                        <Link to={item.link} key={index} className={`p-2 text-center text-white w-100 ${(item.title == 'Minimize') ? 'mini' : 'bg-blue'}`} style={{ textDecoration: 'none' }}>
+                            <FontAwesomeIcon icon={item.icon} style={{ color: "inherit" }} />
+                            <p>{item.title}</p>
+                        </Link>
+                    )
+                }
             </div>
         </div>
     );

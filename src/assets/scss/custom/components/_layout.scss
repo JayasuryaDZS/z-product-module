@@ -1,0 +1,17 @@
+.layout-main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    .body-wrapper-container {
+        flex: 1;
+        display: flex;
+    }
+
+    .body-content {
+        flex: 1;
+        padding: 15px;
+        height: 92.55vh;
+        overflow-y: scroll;
+    }
+}

@@ -1,0 +1,13 @@
+//bootstrap
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+
+//variables
+@import "./variables";
+
+//components
+@import "./custom/components/pageHeader";
+@import "./custom/components/sidebar";
+@import "./custom/components/layout";
+
+

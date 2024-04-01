@@ -1,0 +1,26 @@
+/* Layout.css */
+
+.layout {
+    display: flex;
+}
+
+.sidebar {
+    width: 100px; /* Adjust sidebar width as needed */
+    height: 100vh;
+    /* Add sidebar styles */
+}
+
+.content {
+    flex: 1; /* Allow content to take remaining space */
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    /* Add navbar styles */
+}
+
+.main-content {
+    flex: 1; /* Allow main content to take remaining space */
+    /* Add styles for main content */
+}

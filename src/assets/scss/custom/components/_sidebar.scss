@@ -1,8 +1,15 @@
 .sidebar{
-    width: 100px;
-    height: 83.55vh;
+    // width: 100%;
+    height: 50vh;
+    width: fit-content;
+    overflow-x: hidden;
+    overflow-y: hidden;
     .menu{
-        padding: 10px;
+        height: 50vh;
+        width: fit-content;
+        // margin-bottom: 0.1rem;
+        padding-bottom: 10rem;
+        // padding: 2px;
     background-color: $bg-sidebar;
     }
 }

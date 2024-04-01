@@ -1,0 +1,19 @@
+.dashboard{
+    .heading{
+        background-color: $heading-color;
+        padding: 15px;
+        p{
+            color: $primary-clor;
+        }
+    }
+    .countDetails{
+        .DetailBox{
+            width: calc(100%/3);
+            border: 1px solid #E4E4E4;
+            border-radius: 8px;
+            .title{
+                color: $gray-color;
+            }
+        }
+    }
+}

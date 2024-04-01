@@ -12,7 +12,6 @@ const Layout = ({children}: LayoutProps) => {
           <Sidebar />
           <div className="body-content">
             { children }
-            {children}
           </div>
         </div>
     </div>

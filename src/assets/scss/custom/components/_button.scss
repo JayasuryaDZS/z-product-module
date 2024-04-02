@@ -1,0 +1,22 @@
+// @mixin Btn($color, $bg-sidebar, $pointer, $border, $opacity: 1) {
+//     padding: 8px 13px;
+//     background-color: $bg-sidebar;
+//     color: $color;
+//     outline:none;
+//     border: $border;
+//     border-radius: 5px;
+//     font-size: 12px;
+//     text-transform: uppercase;
+// }
+
+// .filled {
+//     @include Btn(white,$bg-sidebar ,pointer ,none );
+// }
+
+// .outlined {
+//     @include Btn($bg-sidebar, transparent ,pointer ,1px solid $bg-sidebar);
+// }
+
+// .btn-disable {
+//     @include Btn(white,lightgrey ,not-allowed ,none, .7 );
+// }

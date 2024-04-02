@@ -1,0 +1,90 @@
+.products {
+    .heading {
+        background-color: $heading-color;
+        padding: 10px;
+
+        p {
+            color: $primary-clor;
+        }
+    }
+
+    .pro_btn {
+        border: 2px solid $bg-sidebar;
+        // color: $heading-color;
+        background: $bg-sidebar;
+        width: fit-content;
+
+        &:hover {
+            background: $bg-sidebar;
+            border: 2px solid $bg-sidebar;
+        }
+
+    }
+
+    .card-container {
+        padding-top: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .product-card {
+        display: flex;
+        flex-direction: row;
+        border: 2px solid #e2e2e2;
+        margin-bottom: 25px;
+    }
+
+    .product-card .section1,
+    .product-card .section3 {
+        flex: 0 0 15%;
+        /* Each section takes up 20% width */
+        padding: 2px;
+        position: relative;
+    }
+
+    .product-card .section2 {
+        flex: 1;
+        /* Section2 takes up remaining space */
+        padding: 2px;
+        position: relative;
+    }
+
+    .product-card .section1::after,
+    .product-card .section2::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 2px;
+        background-color: #ccc;
+    }
+
+    .product-card .section1::after {
+        left: calc(100% + -12px);
+    }
+
+    .product-card .section2::after {
+        left: calc(100% + 5px);
+    }
+
+    .product-card .section3::after {
+        right: calc(100% + 5px);
+    }
+
+    .product-card .section3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .icon {
+        color: #e39030;
+        margin-right: 5px;
+    }
+
+    .user-icon {
+        color: $bg-sidebar;
+
+    }
+
+}

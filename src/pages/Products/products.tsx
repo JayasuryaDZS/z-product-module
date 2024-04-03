@@ -70,7 +70,7 @@
 
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { Button, Card, CardBody, CardTitle } from "reactstrap";
+import { Card, CardBody, CardTitle } from "reactstrap";
 import { getAllProducts } from "../../slice/Products/thunk";
 import Loader from "../../Components/loader/loader";
 import chart from "../../assets/images/chart.jpg";
@@ -78,6 +78,7 @@ import { faDollarSign, faHandshake, faHouseChimneyMedical, faStickyNote, faUser,
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import ProductCreation from "./ProductCreation";
+import Button from "../../Components/Button";
 
 const Products = () => {
   const dispatch = useDispatch();
@@ -109,9 +110,9 @@ const Products = () => {
     <div className="products">
        <React.Fragment>
       {loading && <Loader />}
-      <div className="heading p-3 d-flex justify-content-between align-items-left">
+      <div className="heading p-3 d-flex justify-content-between">
         <p className="fs-4 fw-bolder">Products</p>
-        <Button className="pro_btn" onClick={() => { setProductForm(true) }}>Add Product</Button>
+        <Button btntype='filled' onClick={() => { setProductForm(true) }}>Add Product</Button>
       </div>
       <div className="card-container">
         {tableData ? (

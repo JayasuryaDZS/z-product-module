@@ -7,4 +7,27 @@
             color: #000 !important;
         }
     }
+
+    .icon-wrapper {
+        padding: 14px 0px;
+        font-size: 0.9rem;
+        cursor: pointer;
+
+        &.active {
+            background-color: white;
+            color: #000;
+            position: relative;
+            border-radius: 10px;
+
+            &:before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 4px;
+                background-color: $bg-sidebar;
+            }
+        }
+    }
 }

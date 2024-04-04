@@ -110,9 +110,11 @@ const Products = () => {
     <div className="products">
        <React.Fragment>
       {loading && <Loader />}
-      <div className="heading p-3 d-flex justify-content-between">
+      <div style={{height:"81px"}}>
+      <div className="heading position-fixed z-3 d-flex justify-content-between">
         <p className="fs-4 fw-bolder">Products</p>
         <Button btntype='filled' onClick={() => { setProductForm(true) }}>Add Product</Button>
+      </div>
       </div>
       <div className="card-container">
         {tableData ? (

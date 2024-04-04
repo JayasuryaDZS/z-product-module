@@ -1,9 +1,15 @@
 .subscription {
     .heading{
         background-color: $heading-color;
-        padding: 15px;
+        padding: 23px;
+        width: calc(100% - 100px);
         p{
             color: $primary-clor;
+        }
+        .addBtn{
+            background-color: $bg-sidebar;
+            border: none;
+            padding:8px 25px;
         }
     }
     .search-btn{
@@ -16,6 +22,8 @@
             width: calc(100%/4 - 10px);
             border: 1px solid #E4E4E4;
             border-radius: 8px;
+            min-width: 170px;
+            flex: 1;
             .title{
                 color: $gray-color;
             }

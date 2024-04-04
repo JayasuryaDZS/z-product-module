@@ -36,8 +36,8 @@ const Dashboard = () => {
     console.log(loading, data, 'checking the both the parameters 7 -->')
     return (
         <div className='dashboard'>
-            <div style={{height:"80px"}}>
-            <div className='heading position-fixed w-100'>
+            <div style={{height:"81px"}}>
+            <div className='heading position-fixed w-100 z-3 '>
                 <p className='fs-4 fw-bolder'>Dashboard</p>
             </div>
             </div>
@@ -53,12 +53,12 @@ const Dashboard = () => {
                     }
 
                 </div>
-            {loading && <h3>Loading ......</h3>}
+            {/* {loading && <h3>Loading ......</h3>}
             {(data || []).map((data: any, idx: number) => {
                 return (
                     <p key={idx}>{data.title}</p>
                 )
-            })}
+            })} */}
         </div>
     )
 }

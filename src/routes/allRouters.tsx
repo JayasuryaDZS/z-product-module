@@ -8,7 +8,7 @@ const authProtectedRoutes = [
   { path: "/products", component: <Products />},
   { path: "/practices", component: <Practices />},
   { path: "/subscription", component: <Subscription />},
-  { path: "/subscriptionOverview", component: <SubscriptionOverview />},
+  { path: "/subscriptionOverview/:id", component: <SubscriptionOverview />},
 
 ]
 

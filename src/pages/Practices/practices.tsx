@@ -34,12 +34,14 @@ const Practices = (props:any) => {
         <div className='Practice'>
              <React.Fragment>
       {/* {loading && <Loader />} */}
-            <div className='heading p-3 d-flex justify-content-between'>
+      <div style={{height:"81px"}}>
+            <div className='heading position-fixed z-3 d-flex justify-content-between'>
                 <p className='fs-4 fw-bolder'>Practice</p>
                 <Button btntype='filled'  onClick={() => { setPracticeForm(true) }} >
                 <FontAwesomeIcon icon={faPlus} className="me-2" />
                     Add Practice
                     </Button>
+            </div>
             </div>
            
             <div className='d-flex countDetails'>

@@ -4,6 +4,7 @@ import { getAllSubscription } from "../../slice/Subscription/thunk";
 import Loader from "../../Components/loader/loader";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircle, faHandshake, faPenToSquare, faTrash, faFile, faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import { useNavigate } from "react-router-dom";
 import { Button, Input } from "reactstrap";
 interface subscriptionData {
     count: string,
@@ -12,8 +13,8 @@ interface subscriptionData {
 }
 function Subscription() {
     const dispatch = useDispatch();
+    const navigate = useNavigate()
     const { loading, tableData } = useSelector((state: any) => state.Subscription)
-    console.log(tableData)
     useEffect(() => {
         getAllSubscription(dispatch);
     }, [dispatch]);
@@ -50,8 +51,9 @@ function Subscription() {
     return (
         <div className="subscription">
             <div style={{height:"80px"}}>
-            <div className='heading position-fixed w-100 z-3'>
+            <div className='heading position-fixed z-3 d-flex justify-content-between '>
                 <p className='fs-4 fw-bolder'>Subscriptions</p>
+                <Button className="addBtn">Add Subscription</Button>
             </div>
             </div>
             {loading && <Loader />}
@@ -75,7 +77,8 @@ function Subscription() {
             <p className=" my-3">{(tableData.length).toString().padStart(2, 0)} Record(S)</p>
             {
                 tableData ? tableData.map((item: any) =>
-                    <div className="sub-box p-3 d-flex my-3 justify-content-between" onClick={()=>{window.location.href = '/subscriptionOverview'}}>
+                    <div className="sub-box p-3 d-flex my-3 justify-content-between" onClick={()=>{
+                        navigate(`/subscriptionOverview/${item.subscription_id}`)}}>
                         <div className="sec-a">
                             <div className="d-flex sub-head">
                                 <h3 className="fs-5 me-2">{item.subscription_name}</h3>

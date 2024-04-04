@@ -49,12 +49,12 @@ const Dashboard = () => {
                     }
 
                 </div>
-            {loading && <h3>Loading ......</h3>}
+            {/* {loading && <h3>Loading ......</h3>}
             {(data || []).map((data: any, idx: number) => {
                 return (
                     <p key={idx}>{data.title}</p>
                 )
-            })}
+            })} */}
         </div>
     )
 }

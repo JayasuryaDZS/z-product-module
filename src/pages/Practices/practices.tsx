@@ -1,4 +1,4 @@
-import { faHouseChimneyMedical, faPlus, faUsers } from "@fortawesome/free-solid-svg-icons"
+import { faFileExport, faFileImport, faHouseChimneyMedical, faPlus, faTableColumns, faUsers } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Button from "../../Components/Button";
 import React, { useState } from "react";
@@ -60,8 +60,20 @@ const Practices = (props:any) => {
                 />
     {/* <FontAwesomeIcon icon={faMagnifyingGlass} style={{color: "#757575",right: "30px"}} className="position-absolute "/> */}
                 <Button style={{marginLeft:"10px", fontSize:"15px"}} btntype='outlined' onClick={() => props.setShow(false)}>search</Button>
+                <div className="d-flex align-items-center w-50 justify-content-end">
+            <Button className="me-2" btntype="outlined" >
+            <span className="me-1"><FontAwesomeIcon icon={faTableColumns} /></span>
+                column</Button>
+            <Button className="me-2" btntype="outlined" >
+            <span className="me-1"><FontAwesomeIcon icon={faFileExport} /></span>
+                Export</Button>
+            <Button className="me-2" btntype="outlined" >
+            <span className="me-1"><FontAwesomeIcon icon={faFileImport} /></span>
+                Import</Button>
+                </div>
             </div>
             {/* {(practiceForm) && <PracticeCreation show={practiceForm} setShow={setPracticeForm} />} */}
+           
             </React.Fragment>
         </div>
     )

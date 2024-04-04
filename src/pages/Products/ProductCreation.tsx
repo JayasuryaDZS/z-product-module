@@ -52,7 +52,7 @@ const ProductCreation = (props: any) => {
                     <div className='col-12 col-md-6 mt-3' >
                         <p style={{marginLeft:"60px"}}>Modules</p>
                         {moduleInputs.map((module, index) => (
-                            <div key={index} className=' module-container'>
+                            <div key={index} className='d-flex justify-content-between align-items-center module-container'>
                                 
                                 <Input
                                     type='text'
@@ -61,7 +61,7 @@ const ProductCreation = (props: any) => {
                                     placeholder='Module Name'
                                     className='form-control me-2'
                                 />
-                                <FontAwesomeIcon icon={faTrash} style={{ cursor: 'pointer' }} onClick={() => removeModuleInput(index)} />
+                                <FontAwesomeIcon className="user-icon" icon={faTrash} style={{ cursor: 'pointer' }} onClick={() => removeModuleInput(index)} />
                             </div>
                             
                         ))}

@@ -1,3 +1,4 @@
+import LoginPage from "../pages/Login/loginPage"
 import Practices from "../pages/Practices/practices"
 import Products from "../pages/Products/products"
 import Dashboard from "../pages/dashboard"
@@ -8,7 +9,7 @@ const authProtectedRoutes = [
 ]
 
 const publicRoutes = [
-    { path: "/", component: <div>Login Page</div>}
+  { path: "/", component: <LoginPage/>}
 ]
 
 export { authProtectedRoutes, publicRoutes } 

@@ -3,8 +3,10 @@
 
 
 //variables
+
 @import "./variables";
 
+@import "./common";
 //components
 @import './custom/components/button.scss';
 @import "./custom/components/pageHeader";
@@ -15,5 +17,6 @@
 @import "./custom/pages/dashboard";
 @import "./custom/pages/myproducts";
 @import "./custom/pages/subscription";
+@import "./custom/pages/practices";
 
 

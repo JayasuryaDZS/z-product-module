@@ -1,3 +1,4 @@
+// products.scss
 .products {
     .heading {
         background-color: $heading-color;
@@ -8,37 +9,24 @@
         }
     }
 
-    .pro_btn {
-        border: 2px solid $bg-sidebar;
-        // color: $heading-color;
-        background: $bg-sidebar;
-        width: fit-content;
-
-        &:hover {
-            background: $bg-sidebar;
-            border: 2px solid $bg-sidebar;
-        }
-
-    }
-
     .card-container {
-        padding-top: 20px;
-        padding-left: 10px;
-        padding-right: 10px;
+        padding: 10px;
     }
 
+    .card-body {
+      padding: 0.01rem;
+    }
     .product-card {
         display: flex;
         flex-direction: row;
         border: 2px solid #e2e2e2;
-        margin-bottom: 25px;
+        margin-bottom: 20px;
     }
 
     .product-card .section1,
     .product-card .section3 {
         flex: 0 0 15%;
-        /* Each section takes up 20% width */
-        padding: 2px;
+        padding: 10px;
         position: relative;
     }
 
@@ -80,11 +68,27 @@
     .icon {
         color: #e39030;
         margin-right: 5px;
+        justify-content: center;
+        align-items: center;
     }
 
     .user-icon {
         color: $bg-sidebar;
-
     }
+}
+
+.offcanvas {
+    width: 50% !important;
+
+    .offcanvas-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+  
+    .module-container {
+        position: relative;
+        padding-left: 60px;
+      }
 
 }

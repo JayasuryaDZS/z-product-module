@@ -1,7 +1,7 @@
-.dashboard{
+.Practice{
     .heading{
         background-color: $heading-color;
-        padding: 15px;
+        padding: 10px;
         p{
             color: $primary-clor;
         }
@@ -18,5 +18,10 @@
          
         }
         
+    }
+
+    .search-btn{
+        padding-left: 15px;
+
     }
 }

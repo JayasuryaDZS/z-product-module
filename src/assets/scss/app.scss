@@ -6,14 +6,14 @@
 @import "./variables";
 
 //components
+@import './custom/components/button.scss';
 @import "./custom/components/pageHeader";
-
 @import "./custom/components/sidebar";
 @import "./custom/components/layout";
-@import "./custom/pages/dashboard";
 
 //pages
+@import "./custom/pages/dashboard";
 @import "./custom/pages/myproducts";
-@import './custom/components/button.scss';
+@import "./custom/pages/subscription";
 
 

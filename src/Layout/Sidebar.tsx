@@ -50,8 +50,8 @@ const Sidebar: React.FC = () => {
         {
             title: "Subscription",
             icon: faFile,
-            active: pathname === '/Practices',
-            link: "/practices"
+            active: pathname === '/subscription',
+            link: "/subscription"
         },
         {
             title: "Billings",

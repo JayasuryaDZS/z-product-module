@@ -1,0 +1,59 @@
+.subscription {
+    .heading{
+        background-color: $heading-color;
+        padding: 15px;
+        p{
+            color: $primary-clor;
+        }
+    }
+    .search-btn{
+        border: 1px solid $bg-sidebar;
+        background-color: #fff;
+        color: $bg-sidebar;
+    }
+    .countDetails{
+        .DetailBox{
+            width: calc(100%/4 - 10px);
+            border: 1px solid #E4E4E4;
+            border-radius: 8px;
+            .title{
+                color: $gray-color;
+            }
+        }
+    }
+    .sub-box {
+        border: 1px solid #E4E4E4;
+        border-radius: 8px;
+
+        .sec-a {
+            flex: 3;
+            .sub-head {
+                p {
+                    color: $green-color;
+                    font-size: 14px;
+                }
+
+            }
+        }
+.sec-b{
+    flex: 1;
+}
+        .sec-c {
+            flex: 2;
+            .products {
+                width: 50px;
+                height: 50px;
+                background-color: #F4F4F4;
+                border-radius: 4px;
+                padding: 3px;
+               p{
+                font-size: 12px;
+               }
+            }
+        }
+        .sec-d{
+            flex: 4;
+        }
+    }
+
+}

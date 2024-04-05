@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from "react-redux"
 import Loader from "../../Components/loader/loader"
 import { faHandshake, faHouseChimneyMedical, faUser } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { Button } from "reactstrap"
+import Button from "../../Components/Button"
 function SubscriptionOverview() {
   const params = useParams()
   const dispatch = useDispatch<any>()
@@ -18,11 +18,11 @@ function SubscriptionOverview() {
     <div className="subscriptionOverview">
       {loading && <Loader />}
       <div style={{height:"80px"}}>
-            <div className='heading position-fixed z-3 d-flex justify-content-between '>
+            <div className='heading position-fixed z-3 d-flex justify-content-between'>
                 <p className='fs-4 fw-bolder'>Subscription Overview</p>
                 <div>
-                  <Button className="cancelBtn me-2">Cancel</Button>
-                  <Button className="editBtn">Edit</Button>
+                  <Button btntype='outlined' className="me-3">Cancel</Button>
+                  <Button btntype='filled'>Edit</Button>
                 </div>
             </div>
             </div>

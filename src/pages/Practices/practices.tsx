@@ -57,11 +57,12 @@ const Practices = (props:any) => {
 
             <div className='d-flex search-btn'>
                 <input 
+                    className="w-25 me-3"
                     type="text"
                     placeholder="⌕ Search"
                 />
     {/* <FontAwesomeIcon icon={faMagnifyingGlass} style={{color: "#757575",right: "30px"}} className="position-absolute "/> */}
-                <Button style={{marginLeft:"10px", fontSize:"15px"}} btntype='outlined' onClick={() => props.setShow(false)}>search</Button>
+                <Button style={{ fontSize:"15px"}} btntype='outlined' onClick={() => props.setShow(false)}>search</Button>
                 <div className="d-flex align-items-center w-50 justify-content-end">
             <Button className="me-2" btntype="outlined" >
             <span className="me-1"><FontAwesomeIcon icon={faTableColumns} /></span>

@@ -5,7 +5,8 @@ import Loader from "../../Components/loader/loader";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircle, faHandshake, faPenToSquare, faTrash, faFile, faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import { useNavigate } from "react-router-dom";
-import { Button, Input } from "reactstrap";
+import { Input } from "reactstrap";
+import Button from "../../Components/Button";
 interface subscriptionData {
     count: string,
     title: string,
@@ -53,7 +54,7 @@ function Subscription() {
             <div style={{height:"80px"}}>
             <div className='heading position-fixed z-3 d-flex justify-content-between '>
                 <p className='fs-4 fw-bolder'>Subscriptions</p>
-                <Button className="addBtn">Add Subscription</Button>
+                <Button btntype="filled">Add Subscription</Button>
             </div>
             </div>
             {loading && <Loader />}
@@ -70,9 +71,9 @@ function Subscription() {
 
             </div>
             <div className="searchOptions d-flex position-relative">
-                <Input placeholder="     Search Plan" className="w-25" />
-                <FontAwesomeIcon icon={faMagnifyingGlass} style={{ color: "#757575", left:'10px',top:'10px' }} className="position-absolute " />
-                <Button className="ms-2 search-btn">Search</Button>
+                <Input placeholder="Search Plan" className="w-25 me-3" />
+                {/* <FontAwesomeIcon icon={faMagnifyingGlass} style={{ color: "#757575", left:'10px',top:'10px' }} className="position-absolute " /> */}
+                <Button btntype="outlined">Search</Button>
             </div>
             <p className=" my-3">{(tableData.length).toString().padStart(2, 0)} Record(S)</p>
             {

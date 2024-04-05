@@ -15,7 +15,7 @@ export const getAllProducts = async (dispatch:any) => {
         }
     } catch(error) {
         dispatch(setIsLoadingFalse());
-        toast.error("Something Went Wromg..");
+        toast.error("Something Went Wrong..");
         
     }
 }

@@ -1,8 +1,9 @@
 import { useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux';
 import { faHouseChimneyMedical, faTableColumns, faUsers } from "@fortawesome/free-solid-svg-icons"
-import { getInitialData } from '../slice/Sample/thunk'; 
+import { getInitialData } from '../../slice/Sample/thunk'; 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 interface dashboardData {
     count:string,
     title:string,
@@ -35,9 +36,12 @@ const Dashboard = () => {
     console.log(loading, data, 'checking the both the parameters 7 -->')
     return (
         <div className='dashboard'>
-            <div className='heading p-3'>
+            <div style={{height:"81px"}}>
+            <div className='heading position-fixed w-100 z-3 '>
                 <p className='fs-4 fw-bolder'>Dashboard</p>
             </div>
+            </div>
+           
                 <div className='d-flex countDetails'>
                     {
                         dashboardData.map((item)=>

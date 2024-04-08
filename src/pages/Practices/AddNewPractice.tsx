@@ -1,4 +1,16 @@
+import { faPlus } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useState } from "react";
+
 const AddNewPractice = () => {
+
+    const [selectedImage, setSelectedImage] = useState(null);
+
+    const handleImageUpload = (event: any) => {
+        const file = event.target.files[0];
+        setSelectedImage(file);
+    };
+
     return (
         <div className="AddNewPractice">
             <form className="container create-form mt-3">
@@ -6,11 +18,28 @@ const AddNewPractice = () => {
                     <div className="col-12 col-md-4 mt-2">
                         <h6>Practice Details</h6>
                         <label>Practice Logo</label>
-                        <input
-                            placeholder="Super Admin Name"
-                            type="text"
-                            className="form-control"
-                        />
+
+                        <div className="image-upload">
+
+                            <label htmlFor="logo-upload" className="upload-label">
+                                <div className="upload-box custom-dotted-border" style={{ backgroundImage: selectedImage ? `url(${URL.createObjectURL(selectedImage)})` : 'none' }}>
+                                    {selectedImage && <span style={{ visibility: "hidden" }}>
+                                    </span>}
+                                    <FontAwesomeIcon icon={faPlus} />
+                                    Click to Upload
+                                </div>
+                                <input
+                                    type="file"
+                                    id="logo-upload"
+                                    accept="image/*"
+                                    onChange={handleImageUpload}
+                                    style={{ display: "none" }}
+                                />
+                            </label>
+                        </div>
+
+
+
                     </div>
                 </div>
                 <hr />
@@ -29,18 +58,18 @@ const AddNewPractice = () => {
 
                         <div className="col-12 col-md-4 mt-2">
 
-                            <label>Super admin name</label>
+                            <label>Practice email-id</label>
                             <input
-                                placeholder="Super Admin Name"
+                                placeholder="Practice email-id"
                                 type="text"
                                 className="form-control"
                             />
                         </div>
                         <div className="col-12 col-md-4 mt-2">
 
-                            <label>Super admin name</label>
+                            <label>Prcatice phone number</label>
                             <input
-                                placeholder="Super Admin Name"
+                                placeholder="Prcatice phone number"
                                 type="text"
                                 className="form-control"
                             />
@@ -49,20 +78,20 @@ const AddNewPractice = () => {
                 </div>
                 <hr />
                 <div className="row" >
-                    <div className="col-12 col-md-4 mt-2">
+                    <div className="col-12 col-md-4 mt-1">
                         <h6>Practice Address Details</h6>
-                        <label>Super admin name</label>
+                        <label>City</label>
                         <input
-                            placeholder="Super Admin Name"
+                            placeholder="City"
                             type="text"
                             className="form-control"
                         />
                     </div>
-                    <div className="col-12 col-md-4 mt-2">
+                    <div className="col-12 col-md-4 mt-4">
 
-                        <label>Super admin name</label>
+                        <label>State</label>
                         <input
-                            placeholder="Super Admin Name"
+                            placeholder="State"
                             type="text"
                             className="form-control"
                         />
@@ -71,27 +100,32 @@ const AddNewPractice = () => {
 
                         <div className="col-12 col-md-4 mt-2">
 
-                            <label>Super admin name</label>
+                            <label>Zipcode</label>
                             <input
-                                placeholder="Super Admin Name"
+                                placeholder="Zipcode"
                                 type="text"
                                 className="form-control"
                             />
                         </div>
                         <div className="col-12 col-md-4 mt-2">
 
-                            <label>Super admin name</label>
+                            <label>Address</label>
                             <input
-                                placeholder="Super Admin Name"
+                                placeholder="Address"
                                 type="text"
                                 className="form-control"
                             />
                         </div>
                     </div>
                 </div>
+                <hr />
+             
+                  
+                 
             </form >
         </div >
     );
 }
 
 export default AddNewPractice;
+

@@ -23,3 +23,11 @@
 .bold-3 {
     font-weight: 700;
 }
+
+.heading{
+    background-color: $heading-color;
+    padding: 17px;
+    p{
+        color: $primary-clor;
+    }
+}

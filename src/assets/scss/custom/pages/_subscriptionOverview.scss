@@ -1,11 +1,5 @@
 .subscriptionOverview{
-    .heading{
-        background-color: $heading-color;
-        padding: 23px;
-        width: calc(100% - 100px);
-        p{
-            color: $primary-clor;
-        }
+   
         .cancelBtn{
             border: 1px solid $bg-sidebar;
             background-color: #fff;
@@ -16,7 +10,6 @@
             border: none;
             width:60px;
         }
-    }
     .details{
         background-color: $heading-color;
         border-radius: 10px;

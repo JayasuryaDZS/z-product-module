@@ -1,11 +1,5 @@
 .dashboard{
-    .heading{
-        background-color: $heading-color;
-        padding: 23px;
-        p{
-            color: $primary-clor;
-        }
-    }
+  
     .countDetails{
         .DetailBox{
             width: calc(100%/3);

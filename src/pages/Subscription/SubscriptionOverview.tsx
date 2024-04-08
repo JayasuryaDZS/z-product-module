@@ -18,7 +18,8 @@ function SubscriptionOverview() {
     <div className="subscriptionOverview">
       {loading && <Loader />}
       <div style={{height:"80px"}}>
-            <div className='heading position-fixed z-3 d-flex justify-content-between'>
+            <div className='heading position-fixed z-3 d-flex justify-content-between' style={{width:'calc(100% - 100px)'
+}}>
                 <p className='fs-4 fw-bolder'>Subscription Overview</p>
                 <div>
                   <Button btntype='outlined' className="me-3">Cancel</Button>

@@ -1,12 +1,5 @@
 .Practice{
-    .heading{
-        background-color: $heading-color;
-        padding: 23px;
-        width: calc(100% - 100px);
-        p{
-            color: $primary-clor;
-        }
-    }
+    
     .countDetails{
         .DetailBox{
             width: calc(100%/3);

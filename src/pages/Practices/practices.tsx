@@ -1,7 +1,7 @@
 import { faFileExport, faFileImport, faHouseChimneyMedical, faMagnifyingGlass, faPlus, faTableColumns, faUsers } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Button from "../../Components/Button";
-import React, { useState } from "react";
+import React from "react";
 import { useNavigate } from "react-router-dom";
 
 interface dashboardData {
@@ -34,7 +34,8 @@ const Practices = (props: any) => {
             <React.Fragment>
                 {/* {loading && <Loader />} */}
                 <div style={{ height: "81px" }}>
-                    <div className='heading position-fixed z-3 d-flex justify-content-between'>
+                    <div className='heading position-fixed z-3 d-flex justify-content-between' style={{width:'calc(100% - 100px)'
+}}>
                         <p className='fs-4 fw-bolder'>Practice</p>
                         <Button btntype='filled' onClick={() => {
                             console.log("Button clicked");

@@ -111,7 +111,8 @@ const Products = () => {
        <React.Fragment>
       {loading && <Loader />}
       <div style={{height:"81px"}}>
-      <div className="heading position-fixed z-3 d-flex justify-content-between">
+      <div className="heading position-fixed z-3 d-flex justify-content-between" style={{width:'calc(100% - 100px)'
+}}>
         <p className="fs-4 fw-bolder">Products</p>
         <Button btntype='filled' onClick={() => { setProductForm(true) }}>Add Product</Button>
       </div>

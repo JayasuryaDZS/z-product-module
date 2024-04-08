@@ -138,7 +138,7 @@ const PracticeCreation = () => {
                 ))}
             </div>
             <div className='position-fixed headingPrac'>
-                <div className="heading1">
+                <div className="heading d-flex justify-content-between ">
                     <p className='fs-4 fw-bolder'>{titles[selectedCircle - 1]}</p>
                     <div className='d-flex'>
                         <Button btntype='outlined' className='me-3' onClick={() => {

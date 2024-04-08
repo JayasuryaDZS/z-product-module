@@ -7,11 +7,14 @@ export const getAllProducts = async (dispatch:any) => {
 
     dispatch(isLoading())
     try{
-        const api = `/product/getall`
-        const response = await API.get(api)
+        // const api = `/product/getall`
+        const response = await API.get("/product/getAll")
         const data = response.data.data
         if(data){
       dispatch(getTableData(data))
+        }else{
+            dispatch(setIsLoadingFalse());
+            // toast.warn("No data Found..")
         }
     } catch(error) {
         dispatch(setIsLoadingFalse());

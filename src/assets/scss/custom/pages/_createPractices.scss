@@ -1,0 +1,88 @@
+// .Practice {
+//     .headingPrac {
+//         width: 67%;
+//         margin-left: 25%;
+//         height: 100%;
+//         border-left: 2px solid $heading-color;
+//         justify-content: space-between;
+//         position: fixed;
+//     }
+//     .heading1 {
+//         background-color: $heading-color;
+//         justify-content: space-between;
+//         padding: 23px;
+//         display: flex;
+//     }
+//     .circleContainer {
+//         display: flex;
+//         justify-content: space-between;
+//         padding: 30px;
+       
+//     }
+//     .circle {
+//         width: 40px;
+//         height: 40px;
+//         border-radius: 50%;
+//         border: 1px solid ;
+//         display: flex;
+//         align-items: center;
+//         justify-content: center;
+//         // cursor: pointer;
+//         margin-bottom: 30px;
+//     }
+//     .circle.selected {
+//         background-color:#3bc2ed;
+//         color: #fff; 
+//     }
+// }
+
+.Practice {
+    .headingPrac {
+        width: 67%;
+        margin-left: 25%;
+        height: 100%;
+        border-left: 2px solid $heading-color;
+        justify-content: space-between;
+        position: fixed;
+    }
+    .heading1 {
+        background-color: $heading-color;
+        justify-content: space-between;
+        padding: 23px;
+        display: flex;
+    }
+    .circleContainer {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px;
+        position: relative;
+    }
+    .circle {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 1px solid ;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+        position: relative;
+    }
+    .circle.selected {
+        background-color:#3bc2ed;
+        color: #fff; 
+    }
+    .line {
+        position: absolute;
+        width: 1px; 
+        top: 70px;
+        bottom: 100px; 
+        left: 50px;
+    }
+    .line-selected {
+        background-color: #000;
+    }
+    .circleTitle{
+        padding-left: 40px;
+    }
+}

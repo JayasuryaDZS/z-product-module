@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { getAllSubscription } from "../../slice/Subscription/thunk";
 import Loader from "../../Components/loader/loader";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCircle, faHandshake, faPenToSquare, faTrash, faFile, faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import { faCircle, faHandshake, faPenToSquare, faTrash, faFile } from "@fortawesome/free-solid-svg-icons";
 import { useNavigate } from "react-router-dom";
 import { Input } from "reactstrap";
 import Button from "../../Components/Button";

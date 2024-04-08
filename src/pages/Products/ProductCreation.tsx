@@ -36,8 +36,10 @@ const ProductCreation = (props: any) => {
         <Offcanvas show={props.show} onHide={() => props.setShow(false)} placement='end'>
             <Offcanvas.Header closeButton={false}>
                 <Offcanvas.Title >Add Product</Offcanvas.Title>
-                <Button btntype='outlined' onClick={() => props.setShow(false)}>Cancel</Button>
+                <div className='d-flex'>
+                <Button btntype='outlined' className='me-3' onClick={() => props.setShow(false)}>Cancel</Button>
                 <Button btntype='filled' onClick={() => postProduct}>Save</Button>
+                </div>
             </Offcanvas.Header>
             <hr className='mt-1'/>
             <Offcanvas.Body style={{ padding: "0 5px" }}>
@@ -50,7 +52,7 @@ const ProductCreation = (props: any) => {
                         </div>
                     </div>
                     <div className='col-12 col-md-6 mt-3' >
-                        <p style={{marginLeft:"60px"}}>Modules</p>
+                        <p style={{marginLeft:"100px"}}>Modules</p>
                         {moduleInputs.map((module, index) => (
                             <div key={index} className='d-flex justify-content-between align-items-center module-container'>
                                 

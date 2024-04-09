@@ -34,8 +34,9 @@ const Practices = (props: any) => {
             <React.Fragment>
                 {/* {loading && <Loader />} */}
                 <div style={{ height: "81px" }}>
-                    <div className='heading position-fixed z-3 d-flex justify-content-between' style={{width:'calc(100% - 100px)'
-}}>
+                    <div className='heading position-fixed z-3 d-flex justify-content-between' style={{
+                        width: 'calc(100% - 100px)'
+                    }}>
                         <p className='fs-4 fw-bolder'>Practice</p>
                         <Button btntype='filled' onClick={() => {
                             console.log("Button clicked");

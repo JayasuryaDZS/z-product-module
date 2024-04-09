@@ -50,7 +50,7 @@ const Sidebar: React.FC = () => {
         {
             title: "Subscription",
             icon: faFile,
-            active: pathname === '/subscription',
+            active: pathname === '/subscription' || pathname === "/addSubscription",
             link: "/subscription"
         },
         {
@@ -82,7 +82,7 @@ const Sidebar: React.FC = () => {
     return (
         <div className="sidebar d-flex flex-column">
 
-             <div className="menu d-flex align-items-center h-100 flex-column" style={{ textDecoration: 'none' }}>
+             <div className="menu d-flex align-items-center flex-column position-fixed" style={{ textDecoration: 'none' }}>
                 {
                     sideBar.map((item, index) =>
                         <Link to={item.link} key={index} className={`p-2 text-center text-white w-100 ${(item.title == 'Minimize') ? 'mini' : 'bg-blue'}`} style={{ textDecoration: 'none' }}>

@@ -44,8 +44,8 @@ const Dashboard = () => {
            
                 <div className='d-flex countDetails'>
                     {
-                        dashboardData.map((item)=>
-                            <div className='m-3 DetailBox p-4'>
+                        dashboardData.map((item,index)=>
+                            <div className='m-3 DetailBox p-4' key={index}>
                                 <p className='fs-4 fw-bolder'><FontAwesomeIcon icon={item.iconName} style={{ color: "#3BCDED", }} /> {item.count}</p>
                                 <p className='title fw-bold'>Total {item.title}</p>
                             </div>

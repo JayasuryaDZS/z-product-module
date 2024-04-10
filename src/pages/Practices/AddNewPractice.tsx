@@ -3,7 +3,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 import { Input } from "reactstrap";
 import Button from "../../Components/Button";
-// import React from "react";
 import LocationCreation from "./LocationCreation";
 
 const AddNewPractice = () => {
@@ -18,16 +17,15 @@ const AddNewPractice = () => {
 
     return (
         <div className="AddNewPractice">
-            <p>Practice Details</p>             
-            <form className="containers create-form">            
+            <p>Practice Details</p>
+            <form className="containers create-form">
                 <div className="row mt-3">
-                <label>Practice Logo</label>
-                    <div className="col-12 col-sm-4">                       
+                    <div className="col-12 col-sm-4">
+                        <label>Practice Logo</label>
                         <div className="image-upload">
                             <label htmlFor="logo-upload" className="upload-label">
                                 <div className="upload-box custom-dotted-border" style={{ backgroundImage: selectedImage ? `url(${URL.createObjectURL(selectedImage)})` : 'none' }}>
-                                    {selectedImage && <span style={{ visibility: "hidden" }}>
-                                    </span>}
+                                    {selectedImage && <span style={{ visibility: "hidden" }}></span>}
                                     <FontAwesomeIcon icon={faPlus} />
                                     Click to Upload
                                 </div>
@@ -41,11 +39,27 @@ const AddNewPractice = () => {
                             </label>
                         </div>
                     </div>
+                    <div className="col">
+                        <div className="col-12 col-sm-4 mb-2">
+                            <label>Practice</label>
+                            <Input
+                                type="text"
+                                placeholder="Practice"
+                            />
+                        </div>
+                        <div className="col-12 col-sm-4">
+                            <label>Practice ID</label>
+                            <Input
+                                type="text"
+                                placeholder="Practice ID"
+                            />
+                        </div>
+                    </div>
                 </div>
                 <hr />
-                <div className="row">                   
+                <div className="row">
                     <div className="col-12 col-sm-4 mb-2">
-                    <p>Super Admin Details</p>
+                        <p>Super Admin Details</p>
                         <label >Super admin name</label>
                         <Input
                             placeholder="Super admin name"
@@ -73,9 +87,9 @@ const AddNewPractice = () => {
                     </div>
                 </div>
                 <hr />
-                <div className="row">                   
+                <div className="row">
                     <div className="col-12 col-sm-4 mb-2">
-                    <p className="fw-medium">Practice Address Details</p>
+                        <p className="fw-medium">Practice Address Details</p>
                         <label >City</label>
                         <Input
                             placeholder="city name"
@@ -112,21 +126,19 @@ const AddNewPractice = () => {
                 </div>
                 <hr />
                 <div className="row">
-                    
                     <div className="d-grid col-8">
-                    <p>Practice Location Details</p>
+                        <p>Practice Location Details</p>
                         <Button btntype="outlined" type="button"
-                        
-                        onClick={() => { setLocationForm(true) }}>
-                            <FontAwesomeIcon icon={faPlus} style={{marginRight:"5px"}} />
+                            onClick={() => { setLocationForm(true) }}>
+                            <FontAwesomeIcon icon={faPlus} style={{ marginRight: "5px" }} />
                             Add Location</Button>
                     </div>
                 </div>
                 {(locationForm) && <LocationCreation show={locationForm} setShow={setLocationForm} />}
-                <hr className="mt-4"/><hr className="mt-4"/>
-                <div className="row">                   
+                <hr className="mt-4" /><hr className="mt-4" />
+                <div className="row">
                     <div className="col-12 col-sm-4 mb-2">
-                    <p className="fw-medium">Practice Social media Details</p>
+                        <p className="fw-medium">Practice Social media Details</p>
                         <label >Instagram page</label>
                         <Input
                             placeholder="instagram page"

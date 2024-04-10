@@ -2,6 +2,12 @@
     width: 100px;
     .menu{
         background-color: $bg-sidebar;
+        width: inherit;
+        overflow-y: auto;
+        height: calc(100vh - 50px);
+        &::-webkit-scrollbar {
+            display: none;
+        }
         .mini{
             background-color: #e7e7e7;
             color: #000 !important;

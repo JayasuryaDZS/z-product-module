@@ -55,7 +55,7 @@ function Subscription() {
             <div className='heading position-fixed z-3 d-flex justify-content-between ' style={{width:'calc(100% - 100px)'
 }}>
                 <p className='fs-4 fw-bolder'>Subscriptions</p>
-                <Button btntype="filled">Add Subscription</Button>
+                <Button btntype="filled" onClick={()=>{navigate('/addSubscription')}}>Add Subscription</Button>
             </div>
             </div>
             {loading && <Loader />}

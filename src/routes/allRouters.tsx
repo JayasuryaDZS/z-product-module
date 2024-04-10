@@ -5,6 +5,7 @@ import Dashboard from "../pages/DashBoard/dashboard"
 import Subscription from "../pages/Subscription"
 import SubscriptionOverview from "../pages/Subscription/SubscriptionOverview"
 import PracticeCreation from "../pages/Practices/ParcticeCreation"
+import AddSubscription from "../pages/Subscription/AddSubscription"
 
 const authProtectedRoutes = [
   { path: "/dashboard", component: <Dashboard />},
@@ -13,6 +14,7 @@ const authProtectedRoutes = [
   { path: "/createPractice", component: <PracticeCreation />},
   { path: "/subscription", component: <Subscription />},
   { path: "/subscriptionOverview/:id", component: <SubscriptionOverview />},
+  { path: "/addSubscription", component: <AddSubscription />},
 
 ]
 

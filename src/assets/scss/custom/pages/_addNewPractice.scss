@@ -1,15 +1,20 @@
 .AddNewPractice {
     overflow-y: scroll;
-    height: 86vh;
+    height: 83vh;
+    padding: 20px;
 }
 
 .create-form {
 
     label {
         margin-bottom: 5px;
-        font-size: 14px;
-        font-weight: 500;
+        font-size: 15px;
+        font-weight: 500px;
         color: #717171;
+    }
+
+    p {
+        color: #3b4b68;
     }
 
     .form-check-input:checked {
@@ -41,6 +46,7 @@
 .upload-box span {
     font-size: 48px;
 }
+
 .offcanvas {
     width: 50% !important;
 
@@ -49,13 +55,14 @@
         justify-content: space-between;
         align-items: center;
     }
-  
+
     .module-container {
         position: relative;
         padding-left: 60px;
         margin-top: 10px;
-      }
-      .user-icon {
+    }
+
+    .user-icon {
         color: $bg-sidebar;
     }
 

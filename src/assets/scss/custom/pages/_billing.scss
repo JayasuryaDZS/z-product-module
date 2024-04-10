@@ -1,14 +1,24 @@
 .billing {
     padding: 20px;
     font-size: large;
-        font-weight: 500px;
+    font-weight: 500px;
+    overflow-y: scroll;
+    height: 83vh;
 
-    .containers{
+    .containers {
         font-size: large;
         font-weight: 500px;
     }
 }
-.d-inline-block{
-    font-size: large;
-    
+
+.checkbox .form-check-input {
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+    border: 2px solid black;
+    margin-right: 10px;
+}
+
+.checkbox .form-check-input:checked {
+    background-color: $bg-sidebar;
 }

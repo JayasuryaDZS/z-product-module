@@ -18,11 +18,11 @@ const AddNewPractice = () => {
 
     return (
         <div className="AddNewPractice">
-            <form className="container create-form mt-3">
-                <div className="row">
-                    <div className="col-12 col-sm-4">
-                        <h6>Practice Details</h6>
-                        <label>Practice Logo</label>
+            <p>Practice Details</p>             
+            <form className="containers create-form">            
+                <div className="row mt-3">
+                <label>Practice Logo</label>
+                    <div className="col-12 col-sm-4">                       
                         <div className="image-upload">
                             <label htmlFor="logo-upload" className="upload-label">
                                 <div className="upload-box custom-dotted-border" style={{ backgroundImage: selectedImage ? `url(${URL.createObjectURL(selectedImage)})` : 'none' }}>
@@ -43,9 +43,9 @@ const AddNewPractice = () => {
                     </div>
                 </div>
                 <hr />
-                <div className="row">
-                    <p className="fw-medium">Super Admin Details</p>
+                <div className="row">                   
                     <div className="col-12 col-sm-4 mb-2">
+                    <p>Super Admin Details</p>
                         <label >Super admin name</label>
                         <Input
                             placeholder="Super admin name"
@@ -73,9 +73,9 @@ const AddNewPractice = () => {
                     </div>
                 </div>
                 <hr />
-                <div className="row">
-                    <p className="fw-medium">Practice Address Details</p>
+                <div className="row">                   
                     <div className="col-12 col-sm-4 mb-2">
+                    <p className="fw-medium">Practice Address Details</p>
                         <label >City</label>
                         <Input
                             placeholder="city name"
@@ -83,7 +83,7 @@ const AddNewPractice = () => {
                             className="form-control"
                         />
                     </div>
-                    <div className="col-12 col-sm-4 ">
+                    <div className="col-12 col-sm-4 mt-4">
                         <label>State</label>
                         <Input
                             placeholder="state"
@@ -112,9 +112,9 @@ const AddNewPractice = () => {
                 </div>
                 <hr />
                 <div className="row">
-                    <p className="fw-medium">Practice Location Details</p>
-                    <div className="d-grid col-8 mt-2">
-
+                    
+                    <div className="d-grid col-8">
+                    <p>Practice Location Details</p>
                         <Button btntype="outlined" type="button"
                         
                         onClick={() => { setLocationForm(true) }}>
@@ -124,20 +124,20 @@ const AddNewPractice = () => {
                 </div>
                 {(locationForm) && <LocationCreation show={locationForm} setShow={setLocationForm} />}
                 <hr className="mt-4"/><hr className="mt-4"/>
-                <div className="row">
-                    <p className="fw-medium">Practice Address Details</p>
+                <div className="row">                   
                     <div className="col-12 col-sm-4 mb-2">
-                        <label >City</label>
+                    <p className="fw-medium">Practice Social media Details</p>
+                        <label >Instagram page</label>
                         <Input
-                            placeholder="city name"
+                            placeholder="instagram page"
                             type="text"
                             className="form-control"
                         />
                     </div>
-                    <div className="col-12 col-sm-4 ">
-                        <label>State</label>
+                    <div className="col-12 col-sm-4 mt-4">
+                        <label>Linkedin page</label>
                         <Input
-                            placeholder="state"
+                            placeholder="linkedin page"
                             type="text"
                             className="form-control"
                         />
@@ -145,17 +145,17 @@ const AddNewPractice = () => {
                 </div>
                 <div className="row">
                     <div className="col-12 col-sm-4 mb-2">
-                        <label >Zipcode</label>
+                        <label >Facebook page</label>
                         <Input
-                            placeholder="zipcode"
+                            placeholder="facebook page"
                             type="text"
                             className="form-control"
                         />
                     </div>
                     <div className="col-12 col-sm-4">
-                        <label>Address</label>
+                        <label>Website URL</label>
                         <Input
-                            placeholder="Address"
+                            placeholder="website url"
                             type="text"
                             className="form-control"
                         />

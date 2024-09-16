@@ -1,0 +1,64 @@
+.subscriptionOverview{
+   
+        .cancelBtn{
+            border: 1px solid $bg-sidebar;
+            background-color: #fff;
+            color: $bg-sidebar;
+        }
+        .editBtn{
+            background-color: $bg-sidebar;
+            border: none;
+            width:60px;
+        }
+    .details{
+        background-color: $heading-color;
+        border-radius: 10px;
+    }
+    .sub-details{
+        border: 2px solid #E4E4E4;
+        border-radius: 8px;
+        .subscription{
+            width: 40%;
+            label{
+                color: $gray-color;
+            }
+            .active{
+                width: 70px;
+                background-color: #E9F6ED;
+                color: #26793E;
+                border: 2px solid #26793E;
+                border-radius: 15px;
+                text-align: center;
+            }
+        }
+        .totalChart{
+            width: 30%;
+            label{
+                color: $gray-color;
+
+            }
+            a{
+                font-size: 12px;
+            }
+        }
+    }
+    .products{
+        border: 2px solid #E4E4E4;
+        border-radius: 8px;
+        min-width: 250px;
+        .module{
+            border: 2px solid #B1B1B1;
+            display: inline-block;
+            border-radius: 15px;
+            background-color: #F4F4F4;
+            color: $gray-color;
+            padding:0 5px;
+            font-size: 14px;
+            
+        }
+        a{
+            font-size: 14px;
+        }
+    }
+  
+}

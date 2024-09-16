@@ -1,0 +1,18 @@
+.layout-main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    .body-wrapper-container {
+        flex: 1;
+        display: flex;
+    }
+
+    .body-content {
+        flex: 1;
+        overflow-y:auto;
+    }
+    .body-content::-webkit-scrollbar{
+        display: none;
+    }
+}

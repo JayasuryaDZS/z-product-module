@@ -1,0 +1,27 @@
+//bootstrap
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+
+//variables
+
+@import "./variables";
+
+@import "./common";
+//components
+@import './custom/components/button.scss';
+@import "./custom/components/pageHeader";
+@import "./custom/components/sidebar";
+@import "./custom/components/layout";
+
+//pages
+@import "./custom/pages/dashboard";
+@import "./custom/pages/myproducts";
+@import "./custom/pages/subscription";
+@import "./custom/pages/Practice/practices";
+@import "./custom/pages/Practice/createPractices";
+@import "./custom/pages/Practice/addNewPractice";
+@import "./custom/pages/Practice/subscription";
+@import "./custom/pages/Practice/billing";
+@import "./custom/pages/subscriptionOverview";
+
+

@@ -1,10 +1,10 @@
 import React from "react"
+import "./assets/scss/app.scss"
 import { Route, Routes } from 'react-router-dom'
 import { authProtectedRoutes, publicRoutes } from "./routes/allRouters"
 import AuthProtected from "./routes/AuthProtected"
 import Layout from "./Layout"
 import { ToastContainer } from "react-toastify"
-
 function App() {
 
   return (

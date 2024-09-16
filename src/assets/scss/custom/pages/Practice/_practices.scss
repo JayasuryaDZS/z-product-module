@@ -1,0 +1,56 @@
+.Practice{
+    
+    .countDetails{
+        .DetailBox{
+            width: calc(100%/3);
+            border: 1px solid #E4E4E4;
+            border-radius: 4px;
+            padding: 0.5rem !important;
+            .title{
+                color: $gray-color;
+            }
+         
+        }
+        
+    }
+       
+    .search-btn{
+        padding-left: 15px;
+
+    }
+    .user-icon {
+        color: $bg-sidebar;
+        cursor: pointer;
+    }
+    .import_btn {
+        border: 2px solid $bg-sidebar;
+        padding: 3px 15px;
+        color: $bg-sidebar;
+        font-size: .8rem;
+    }
+
+    .w-50{
+        width: 75% !important;
+    }
+
+    .form-wrapper {
+        input {
+            padding: 5px 30px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            width: 40%;
+
+            &::placeholder {
+                font-size: 16px;
+            }
+        }
+
+        .search_icon {
+            top: 12px;
+            left: 8px;
+            font-size: 15px;
+            color: #868686;
+        }
+    }
+  
+}

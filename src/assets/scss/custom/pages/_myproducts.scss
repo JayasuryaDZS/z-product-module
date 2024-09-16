@@ -1,0 +1,91 @@
+// products.scss
+.products {
+    
+
+    .card-container {
+        padding: 10px;
+    }
+
+    .card-body {
+      padding: 0.01rem;
+    }
+    .product-card {
+        display: flex;
+        flex-direction: row;
+        border: 2px solid #e2e2e2;
+        margin-bottom: 20px;
+    }
+
+    .product-card .section1,
+    .product-card .section3 {
+        flex: 0 0 15%;
+        padding: 10px;
+        position: relative;
+    }
+
+    .product-card .section2 {
+        flex: 1;
+        /* Section2 takes up remaining space */
+        padding: 2px;
+        position: relative;
+    }
+
+    .product-card .section1::after,
+    .product-card .section2::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 2px;
+        background-color: #ccc;
+    }
+
+    .product-card .section1::after {
+        left: calc(100% + -12px);
+    }
+
+    .product-card .section2::after {
+        left: calc(100% + 5px);
+    }
+
+    .product-card .section3::after {
+        right: calc(100% + 5px);
+    }
+
+    .product-card .section3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .icon {
+        color: #e39030;
+        margin-right: 5px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .user-icon {
+        color: $bg-sidebar;
+    }
+}
+
+.offcanvas {
+    width: 50% !important;
+
+    .offcanvas-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+  
+    .module-container {
+        position: relative;
+        padding-left: 60px;
+        margin-top: 10px;
+      }
+      .user-icon {
+        color: $bg-sidebar;
+    }
+
+}

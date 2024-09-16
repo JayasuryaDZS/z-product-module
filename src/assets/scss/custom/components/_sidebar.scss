@@ -1,0 +1,29 @@
+.sidebar{
+    width: 100px;
+    .menu{
+        background-color: $bg-sidebar;
+        width: inherit;
+        overflow-y: auto;
+        height: calc(100vh - 50px);
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        .mini{
+            background-color: #e7e7e7;
+            color: #000 !important;
+        }
+    }
+
+    .icon-wrapper {
+        padding: 10px 0px;
+        font-size: 0.9rem;
+        cursor: pointer;
+
+        &.active {
+            background-color: white;
+            color: #000;
+            position: relative;
+            border-radius: 10px;
+        }
+    }
+}

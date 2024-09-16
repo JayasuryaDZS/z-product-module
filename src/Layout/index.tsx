@@ -1,16 +1,20 @@
-import React from 'react'
-
+import PageHeader from "./PageHeader";
+import Sidebar from "./Sidebar";
 interface LayoutProps {
     children?: React.ReactNode
 }
 
 const Layout = ({children}: LayoutProps) => {
     return (
-        <React.Fragment>
-            <div className='wrapper'>
-                {children}
-            </div>
-        </React.Fragment>
+        <div className="layout-main">
+        <PageHeader />
+        <div className="body-wrapper-container">
+          <Sidebar />         
+          <div className="body-content">
+            { children }
+          </div>
+        </div>
+    </div>
     )
 }
 
